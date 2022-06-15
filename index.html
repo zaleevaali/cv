@@ -3,78 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Alina CV</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <table cellspacing="15"> 
-        <tr>
-            <td> <img src="avatar.jpeg" width="200" /></td>
-            <td><h1>Алина Залеева</h1>
-                <p>Я люблю путешествовать, заниматься спортом и программировать</p></td>
-        </tr>
-    </table>
+<body> 
+<div class="container">
+    <div class="info">
+        <img src="avatar.jpeg" class="avatar" />
 
-<hr>
 
-<h2>Мои социальные сети</h2>
-<ul>
-   <li><a href="https://instagram.com/zaleevaali"
-    target="_blank">Instagram</a></li> 
-   <li><a href="https://t.me/zaleevaali"
-    target="_blank">Telegram</a></li> 
-</ul>
+        <div class="info-text">
+        <h1>Алина Залеева</h1>
+                    <p>Я люблю читать, заниматься спортом и программировать</p>
+                    <h4>Мои социальные сети</h4>
+       <a href="https://instagram.com/zaleevaali"
+        target="_blank">Instagram</a>
+        |
+       <a href="https://t.me/zaleevaali"
+        target="_blank">Telegram</a>
+    </div>
+</div>
 
-<hr>
-
+<div class="card bg-yellow">
 <h2>Мои хобби</h2>
-<ol>
+<ol class="list">
     <li>Чтение</li>
+    <li>Спорт</li>
     <li>Фотография</li>
-    <li>Спорт: бег, йога</li>
-    <li>Путешествия</li>
 </ol>
+</div>
 
-<hr>
-
+<div class="card bg-green">
 <h2>Опыт работы</h2>
-<table 
-    <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
+<table class="table"
+ >
+ <tr>
+    <td>АМА-Поволжье</td>
+    <td>Маркетинг</td>
+    <td>2018</td>
+        </tr>  
+
         <tr>
-            <td>АМА-Поволжье</td>
-            <td>Маркетолог</td>
-            <td>2018</td>
-                </tr>
+            <td>Nude Story</td>
+            <td>SMM</td>
+            <td>2021</td>
+        </tr>
+
                 <tr>
                     <td>Studio Slow</td>
-                    <td>Маркетолог</td>
+                    <td>Маркетинг</td>
                     <td>2022</td>  
                 </tr>
 </table>
+</div>
 
-<hr>
-
+<div class="contact">
 <h2>Связаться со мной</h2>
-<form>
+
+<form action="/">
+    <div class="row">
+    <div class="form-group">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name" placeholder="Введите ваше имя...">
+</div>
 
-<br>
-
-    <label for="email">Ваш Email:</label>
+<div class="form-group">
+    <label for="email">Ваш email:</label>
     <input type="email" id="email" placeholder="Введите Email...">
+</div>
+</div>
 
-    <br>
-
+<div class="form-group">
     <label for="text">Ваше сообщение:</label>
-    <br>
     <textarea id="text" rows="2" cols="15"></textarea>
+</div>
 
-    <br>
-
-    <input type="submit">
+    <input class="btn" type="submit" value="Связаться!">
 </form>
+<div class="position">
+    <div class="box"></div>
+</div>
+</div>
+
+<div style="margin-bottom: 500px;"></div>
+
 </body>
 </html>
